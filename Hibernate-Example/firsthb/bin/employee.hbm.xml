@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">   
+ 
+ <hibernate-mapping>
+    <class name="com.javatpoint.mypackage.Employee" table="emp1000">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="firstName" length="10" not-null="true" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="lastName" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
